@@ -1,4 +1,4 @@
-/* Bootstrap Contact Form
+/*  Form
  ***************************************************************************/
 $(document).ready(function(){
 	// validate signup form on keyup and submit
@@ -18,22 +18,42 @@ $(document).ready(function(){
 				required: true,
 				minlength: 2
 			},
-			email: {
-				required: true,
-				email: true
+			passportno: {
+				required: true,				
 			},
-			weburl: {
+			issuedatepicker: {
 				required: true,
-				url: true
+				
 			},
-			phone: {
+			validdatepicker: {
 				required: true,
-				phoneUS: true
+				
 			},
-			subject: {
+			typeofpassport: {
 				required: true
 			},
-			message: {
+			nationality: {
+				required: true
+			},
+			dobdatepicker: {
+				required: true
+			},
+			placeofbirth: {
+				required: true
+			},
+			gender: {
+				required: true
+			},
+			maritalstatus: {
+				required: true
+			},
+			nationalindentityno: {
+				required: true
+			},
+			occupation: {
+				required: true
+			},
+			address: {
 				required: true,
 				minlength: 10
 			}
@@ -43,25 +63,47 @@ $(document).ready(function(){
 				required: '<span class="help-block">Please enter your name.</span>',
 				minlength: jQuery.format('<span class="help-block">Your name needs to be at least {0} characters.</span>')
 			},
-			email: {
-				required: '<span class="help-block">Please enter a valid email address.</span>',
-				minlength: '<span class="help-block">Please enter a valid email address.</span>'
+			passportno: {
+				required: '<span class="help-block">Please enter a valid passportno.</span>',
+
 			},
-			weburl: {
-				required: '<span class="help-block">You need to enter the address to your website.</span>',
-				url: jQuery.format('<span class="help-block">You need to enter a valid URL.</span>')
+			issuedatepicker: {
+				required: '<span class="help-block">You need to enter issue date.</span>',
+				url: jQuery.format('<span class="help-block">You need to enter a valid date.</span>')
 			},
-			phone: {
-				required: '<span class="help-block">You need to enter your phone number.</span>',
-				phoneUS: jQuery.format('<span class="help-block">You need to enter a valid phone number.</span>')
+			validdatepicker: {
+				required: '<span class="help-block">You need to enter until valid date.</span>',
+				phoneUS: jQuery.format('<span class="help-block">You need to enter a valid date.</span>')
 			},
-			subject: {
-				required: '<span class="help-block">You need to enter a subject.</span>'
+			typeofpassport: {
+				required: '<span class="help-block">You need to enter a type of passport.</span>'
 			},
-			message: {
-				required: '<span class="help-block">You need to enter a message.</span>',
+			nationality: {
+				required: '<span class="help-block">You need to enter a nationality.</span>'
+			},
+			dobdatepicker: {
+				required: '<span class="help-block">You need to enter a valid birth date.</span>'
+			},
+			placeofbirth: {
+				required: '<span class="help-block">You need to enter a place of birth.</span>'
+			},
+			gender: {
+				required: '<span class="help-block">You need to enter a gender.</span>'
+			},
+			maritalstatus: {
+				required: '<span class="help-block">You need to enter a marital status.</span>'
+			},
+			nationalindentityno: {
+				required: '<span class="help-block">You need to enter a national indentityno.</span>'
+			},
+			occupation: {
+				required: '<span class="help-block">You need to enter a occupation.</span>'
+			},
+			address: {
+				required: '<span class="help-block">You need to enter a Address.</span>',
 				minlength: jQuery.format('<span class="help-block">Enter at least {0} characters.</span>')
 			}
 		}
 	});
+	
 });
